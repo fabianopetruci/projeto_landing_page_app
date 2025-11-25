@@ -1,3 +1,4 @@
+/* ++++  ++++  ++++  ++++  ++++  ++++  CLASSES UTILITÁRIAS ++++  ++++  ++++  ++++  ++++  ++++ */ 
 /*===================  DEFINIÇÃO PARA CONTAINER  =============*/
 .container {
     --max-width: 375px;
@@ -32,6 +33,21 @@
 .even-columns {
     display: grid; /* um do lado do outro */
     gap: 1rem;
+}
+
+/*===================  DISPOSIÇÃO FLEX  ======================*/
+.flex {
+    display: flex;
+}
+
+/*===================  GAP DE 1  =============================*/
+.gap-1 {
+    gap: 1rem;
+}
+
+/*===================  GRID  =================================*/
+.grid {
+    display: grid;
 }
 
 /*=================== MEDIA QUERIES  =========================*/
