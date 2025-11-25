@@ -41,7 +41,7 @@
     font-size: 1.125rem;
 }
 
-.btn[aria-label] {
+.btn[aria-label] { /* botões com texto e borda em gradiente */
     position: relative;
     &::before {
         content:"";
