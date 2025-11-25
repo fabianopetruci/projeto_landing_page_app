@@ -1,0 +1,53 @@
+/*===================  DEFINIÇÃO PARA CONTAINER  =============*/
+.container {
+    --max-width: 375px;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    margin-inline: auto;
+    border: solid violet;
+}
+
+/*===================  PADDINGS  =============================*/
+.py-base {
+    padding-block: var(--py-base);
+}
+
+.py-lg {
+    padding-block: var(--py-lg);
+}
+
+.py-xl {
+    padding-block: var(--py-xl);
+}
+
+.px-lg {
+    padding-inline: var(--px-lg);
+}
+
+/*=================== VISIBILIDADE APENAS DESKTOP  ===========*/
+.desktop-only {
+    display:none;
+}
+
+/*===================  DISPOSIÇÃO EM COLUNAS  ================*/
+.even-columns {
+    display: grid; /* um do lado do outro */
+    gap: 1rem;
+}
+
+/*=================== MEDIA QUERIES  =========================*/
+@media (width >= 80em)  {
+    .container {
+        --max-width: 80rem;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+
+    .even-columns {
+        grid-auto-flow: column; /* um ao lado do outro */
+        grid-auto-columns: 1fr;
+    }
+}
+
+
