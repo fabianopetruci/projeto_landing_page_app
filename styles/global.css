@@ -51,7 +51,7 @@ html {
     font-size: var(--fs-base);
     line-height: 1.6;
     color: var(--text-color-primary);
-    overflow-x: hidden;
+    overflow-x: hidden;/* retira scroll horizontal*/
 
     scroll-behavior: smooth;/* suaviza a transição de seção */
 }
@@ -59,6 +59,7 @@ html {
 /*================  PADRÃO DO BODY  ==========================*/
 body {
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 /*==========  PADRÕES GERAIS h1, h2 e h3  ====================*/
